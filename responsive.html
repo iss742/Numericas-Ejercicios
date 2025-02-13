@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Responsive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    header {
+    background-color: lightblue;
+    padding: 2rem; /* Usando rem */
+    text-align: center;
+}
+.content {
+    width: 80%; /* Usando % */
+    margin: 0 auto;
+    font-size: 1.2em; /* Usando em */
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem; /* Usando rem */
+    width: 100%; /* Usando % */
+    flex-wrap: wrap;
+}
+.gallery img{
+    max-width: 30%;
+    height: auto;
+    margin:0.5rem;
+}
+@media(max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+footer {
+    background-color: lightcoral;
+    padding: 1.5rem; /* Usando rem */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw; /* Usando vw */
+}
+</style>
+<body>
+    <header>
+        <h1>Mi Página Responsive</h1>
+    </header>
+    <main>
+        <section class="content">
+            <p>¡Bienvenido a mi página web adaptativa!</p>
+            <p> ➜ Agrega una grid de 3 imagenes con la propiedad display flex (alinealas horizontalmente)y adaptalas para diferentes pantallas</p>
+            <p>➜ Agrega un texto centrado que sea total mente responsive</p>
+            <p>➜ Agrega una imagen que ocuper el 50% del viewport</p>
+        </section>
+        <section class="gallery">
+            <img src="https://i.pinimg.com/474x/42/b6/dd/42b6dda4f5fed5a4a3fd34ed0802c094.jpg" alt="Imagen 1">
+            <img src="https://i.pinimg.com/474x/e5/cb/1a/e5cb1a3dedf0976c066763418f448dbe.jpg" alt="Imagen 2">
+            <img src="https://i.pinimg.com/474x/b4/29/a5/b429a5734d9906679309b3c773e6bf88.jpg" alt="Imagen 3">
+            </section>
+            <section class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br>
+                     nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in <br>
+                     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <br>
+                     pariatur<br>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<br>
+                     deserunt mollit anim id est laborum</p>
+    </main>
+    <footer>
+        <p>© 2023 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

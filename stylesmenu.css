@@ -1,0 +1,73 @@
+/* Dark Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Menu Container */
+.menu-container {
+    position: relative;
+    z-index: 2; /* Ensure it appears above the background */
+}
+
+/* Menu Title */
+.menu-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Grid Container */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Menu Cards */
+.menu-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.menu-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Hover Effect */
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./danny\'s\ home.png') no-repeat center center/cover;
+    position: relative;
+}
+

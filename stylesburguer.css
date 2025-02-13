@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0d3b26;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+.text-content h1 {
+    font-size: 150px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: overline;
+}
+
+.text-content p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.burger-img {
+    max-width: 450px;
+}
+
+.mini-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.mini-gallery img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.pagination {
+    display: flex;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    border-radius: 50%;
+}
+
+.burger-background{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+}
+body {
+    background-color: #0d241c;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+}
+
+
